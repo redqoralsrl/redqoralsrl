@@ -44,10 +44,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>EraToken</h2>
+          <h2>TitusToken</h2>
           <ol>
             <li><a href="./index.html">Home</a></li>
-            <li>EraToken</li>
+            <li>TitusToken</li>
           </ol>
         </div>
 
@@ -85,33 +85,40 @@
             <div class="portfolio-info">
               <h3>개인프로젝트</h3>
               <ul>
-                <li><strong>프로젝트명</strong>: ERC-20 기반 EraToken</li>
+                <li><strong>프로젝트명</strong>: ERC-20 기반 TitusToken</li>
                 <li><strong>네트워크</strong>: Ropsten Testnet Network</li>
                 <li><strong>사용언어</strong>: Solidity</li>
                 <li><strong>제작</strong>: 5일</li>
                 <li><strong>프로젝트 일정</strong>: 2021/07/26 ~ 2021/07/30</li>
-                <li><strong>Ropsten URL</strong>: <a href="https://ropsten.etherscan.io/token/0x8322f6fdffbeed98cf47ed62b9338dcbb2978309">사이트 바로가기</a></li>
-                <li><strong>Contract URL</strong>: <a href="https://ropsten.etherscan.io/address/0x8322f6fdffbeed98cf47ed62b9338dcbb2978309">사이트 바로가기</a></li>
-                <li><strong>GitHub URL</strong>: <a href="https://github.com/redqoralsrl/EraToken">깃허브 바로가기</a></li>
+                <li><strong>Ropsten URL</strong>: <a href="https://ropsten.etherscan.io/token/0x9e85763834899f24c11194904d0f31d801fdc3b0">사이트 바로가기</a></li>
+                <li><strong>Contract URL</strong>: <a href="https://ropsten.etherscan.io/address/0x9e85763834899f24c11194904d0f31d801fdc3b0">사이트 바로가기</a></li>
+                <li><strong>GitHub URL</strong>: <a href="https://github.com/redqoralsrl/TitusToken">깃허브 바로가기</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>구현 기술</h2>
               <p>
                 - openzeppelin 활용 -<br>
-                1. 토큰 발행 21000000개<br>
-                2. hasRole 권한 부여 코드 구현<br>
-                3. 토큰 생성(_mint), 소각(_burn) 구현<br>
-                4. 토큰 락업 구성<br>
-                - 매달 100만개씩 락업 풀리는 코드 구현<br>
-                - 락업 주인 설정<br>
-                - 락업 추가물량 락업걸기<br>
-                - 락업 강제 해제<br>
-                5. 토큰 전송<br>
-                - 일반 유저 전송과 관리자 전용 전송 구현<br>
-                6. 에어드랍 이벤트 그룹 전송 구현<br>
-                7. 토큰 이름, 심볼, decimals, 개수 조회 구현<br>
-                8. 토큰 거래 정지 구현(_beforeTokenTransfer)<br>
+                발행<br>
+                - 토큰 이름 : TitusToken<br>
+                - 토큰 기호 : TTT<br>
+                - 토큰 decimals : 18<br>
+                - 토큰 발행량 : 21000000개<br>
+                권한<br>
+                - 소각권한(BURN)<br>
+                - 생성권한(MINT)<br>
+                락업<br>
+                - 2100만개 중 100만개만 유통 나머지는 락업<br>
+                - 락업은 처음 생성 지갑에 락업<br>
+                - 락업 지갑 권한 변경 가능<br>
+                - 락업 설정 함수<br>
+                - 락업 추가 설정 함수<br>
+                - 락업 물량 업데이트<br>
+                - 한달 단위로 200만개씩 언락<br>
+                토큰 전송<br>
+                - 일반유저 전송과 관리자 전용 전송 구별<br>
+                에어드랍<br>
+                - 에어드랍을 배열로 다중 전송 가능
               </p>
             </div>
           </div>
